@@ -30,13 +30,17 @@ function Ticket({ img, title, date, day, time, venue, button }: TicketProps) {
             {/* <div className="border-[1px] translate-y-2 border-dashed  w-[80%] translate-x-5 text-center"></div> */}
           </div>
           <div className="px-4 -translate-y-6 flex flex-col justify-center items-center gap-2  pt-4">
-            <p className="font-semibold tracking-wider text-lg">{title}</p>
-            <p className="text-sm  font-light uppercase">
-              <span className="font-semibold px-1">{date}</span>|
-              <span className="font-semibold px-1">{day}</span>|
-              <span className="font-semibold px-1">{time}</span>
+            <p className="font-semibold tracking-wider text-lg"
+              style = {{fontFamily: 'Poppins, sans-serif'}}
+            >{title}</p>
+            <p className="text-sm  font-thin uppercase"
+            style = {{fontFamily: 'Poppins, sans-serif'}}
+            >
+              <span className="font-normal px-1">{date}</span>|
+              <span className="font-normal px-1">{day}</span>|
+              <span className="font-normal px-1">{time}</span>
             </p>
-            <p className="  text-center">{venue}</p>
+            <p className="w-full font-extralight text-center">{venue}</p>
             <button className="w-full mt-2 p-2 dark:bg-dark-btn bg-light-btn capitalize text-dark-text">
               {button}
             </button>
