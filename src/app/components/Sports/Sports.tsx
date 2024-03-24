@@ -19,7 +19,7 @@ const Sports = ({
           Sports
         </h1>
         <button
-          className="w-10 h-10 pt-1"
+          className="w-7 h-7 pt-3"
           onClick={() => setDarkMode(!darkMode)}>
           {darkMode ? (
             <FaMoon className="rounded-full w-full h-full  text-btn" />

@@ -14,7 +14,7 @@ type TicketProps = {
 function Ticket({ img, title, date, day, time, venue, button }: TicketProps) {
   return (
     <div className="w-full flex justify-center pb-10 ">
-      <div className="flex flex-col justify-center items-center w-[200px] sm:w-[264px] h-fit dark:bg-dark-card-bg bg-light-card-bg shadow-xl ">
+      <div className="hover:shadow-2xl transition duration-300 ease-in-out flex flex-col justify-center items-center w-[200px] sm:w-[264px] h-fit dark:bg-dark-card-bg bg-light-card-bg shadow-xl ">
         <div className="w-[210px] sm:w-[260px] pt-2 ">
           <Image
             src={img}

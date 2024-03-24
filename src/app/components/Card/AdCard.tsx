@@ -17,7 +17,7 @@ function AdCard() {
       </div>
       <div className="w-[93%] h-96 line-clamp-6 items-center p-4 border-light-green border-[1px] dark:border-none">
         <p className="font-semibold text-xl capitalize">Advertisement Title</p>
-        <p className="font-thin text-sm  py-4">
+        <p className="text-sm  py-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
           ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

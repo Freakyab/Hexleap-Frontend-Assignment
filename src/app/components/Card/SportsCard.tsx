@@ -10,7 +10,7 @@ interface SportsCardProps {
 
 const SportsCard = ({ img, title, totalEvents, sport }: SportsCardProps) => {
   return (
-    <div className="h-full w-fit bg-light-card-bg dark:bg-dark-card-bg py-3 flex flex-col items-center shadow-lg">
+    <div className="h-full w-fit bg-light-card-bg dark:bg-dark-card-bg py-3 flex flex-col items-center shadow-lg hover:shadow-2xl transition duration-300 ease-in-out hover:scale-105">
       <div className="w-[250px] h-full  flex justify-center items-center px-2">
         <Image
           src={img}
