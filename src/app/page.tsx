@@ -4,6 +4,7 @@ import Slider from "./components/Silder/Slider";
 import Sports from "./components/Sports/Sports";
 import Title from "./components/Title/Title";
 
+
 // Importing the useState hook
 import { useState } from "react";
 

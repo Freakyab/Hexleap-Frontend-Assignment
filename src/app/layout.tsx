@@ -7,7 +7,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Hexleap Assignment",
   description: "Hexleap Assignment for Frontend Developer",
-  icons: "/image.png",
 };
 
 export default function RootLayout({
@@ -17,6 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" href="/image.svg" />
       <body className={inter.className}>{children}</body>
     </html>
   );
