@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
+
 function AdCard() {
   return (
-    <div className="h-[560px] w-[250px] bg-light-bg dark:bg-dark-card-bg py-3 flex flex-col items-center shadow-2xl">
+    <div className="h-[550px] w-[250px] bg-light-bg dark:bg-dark-card-bg py-3 flex flex-col items-center shadow-2xl">
       <div className="w-[250px] relative h-fit justify-between flex items-center px-2 ">
         <Image
           src="/assets/cards/Ad.png"

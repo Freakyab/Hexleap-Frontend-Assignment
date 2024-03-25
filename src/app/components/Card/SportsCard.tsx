@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 
-interface SportsCardProps {
+//  Type for Sports Card
+type SportsCardProps =  {
   img: string;
   title: string;
   totalEvents: string;

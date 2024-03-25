@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
-// Import Swiper React components
+
+// import Swiper for loading data in carousel
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
@@ -9,7 +10,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 // import required modules
-// import Image from "next/image";
 import Ticket from "./../Card/Ticket";
 import ticketContent from "../DataStore/ticketDetails";
 
@@ -20,6 +20,7 @@ function Slider() {
       modules={[Navigation]}
       rewind={true}
       spaceBetween={-100}
+      // Responsive
       breakpoints={{
         300: {
           slidesPerView: 1,
@@ -34,6 +35,8 @@ function Slider() {
           spaceBetween: 0,
         },
       }}>
+
+      {/* Load content as per the data length*/}
       {ticketContent.map((item) => (
         <SwiperSlide key={item.id}>
           <Ticket
@@ -43,7 +46,7 @@ function Slider() {
             day={item.day}
             time={item.time}
             venue={item.venue}
-            button={item.button}
+            buttonDetail={item.button}
           />
         </SwiperSlide>
       ))}
